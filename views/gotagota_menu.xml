@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem name="Gota a Gota" id="gotagota" sequence="10" web_icon="gotagota,static/description/icon.png"/>
+
+    <menuitem name="Operaciones" parent="gotagota" id="gotagota_operaciones" sequence="10" />
+    <menuitem name="Parametricas" parent="gotagota" id="gotagota_parametricas" sequence="20" />
+
+    <!-- menu para dejar ver los componentes y habilitar las vistas -->
+    <menuitem action="gotagota_prestamos_action" parent="gotagota_operaciones" id="gotagota_operaciones_prestamos" sequence="10"/>
+    <menuitem action="gotagota_cobrador_action" parent="gotagota_operaciones" id="gotagota_operaciones_cobrador" sequence="20"/>
+
+    <menuitem action="gotagota_departamento_action" parent="gotagota_parametricas" id="gotagota_parametricas_departamento" sequence="10"/>
+    <menuitem action="gotagota_ciudad_action" parent="gotagota_parametricas" id="gotagota_parametricas_ciudad" sequence="20"/>
+
+</odoo>
